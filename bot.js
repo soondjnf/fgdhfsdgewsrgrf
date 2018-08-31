@@ -17,9 +17,8 @@ function forEachObject(obj, func) {
     Object.keys(obj).forEach(function (key) { func(key, obj[key]) })
 }
 client.on('guildMemberAdd', member => {
-const channel = member.guild.channels.find("name","الشات-العام")
+const channel = member.guild.channels.find("name","welcome")
 if (member.user.bot) return;
-var Canvas = require('canvas-prebuilt')
 var jimp = require('jimp')
   var currentTime = new Date(),
 hours = currentTime.getHours() + 3 ,
@@ -64,7 +63,7 @@ const w = ['./20180806_230413.png'];
                                 ctx.fillText(`${hours}:${minutes}:${seconds} ${suffix}`, 300, 160);
                                               var guild;
     while (!guild)
-    var channel = member.guild.channels.find("name","الشات-العام")
+    var channel = member.guild.channels.find("name","welcome")
                 guild = member.guild
     guild.fetchInvites().then((data) => {
         data.forEach((Invite, key, map) => {
