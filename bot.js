@@ -12,6 +12,13 @@ const jimp = require('jimp');
  const dateFormat = require('dateformat'); 
  const pretty = require('pretty-ms') 
 
+client.on('ready', () => {
+
+        console.log(`----------------`);
+  console.log(`Logged in as ${client.user.tag}!`);
+    console.log(`----------------`);
+});
+
 var dat = JSON.parse("{}");
 function forEachObject(obj, func) {
     Object.keys(obj).forEach(function (key) { func(key, obj[key]) })
