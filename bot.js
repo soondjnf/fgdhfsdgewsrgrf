@@ -4,7 +4,7 @@ const Discord = require('discord.js');
 const client = new Discord.Client();   
 const translate = require('google-translate-api');   
 const fs = require("fs"); 
-const canvas = require("canvas");
+const Canvas = require("canvas");
 const moment = require("moment");  
 
 const UserBlocked = new Set(); 
