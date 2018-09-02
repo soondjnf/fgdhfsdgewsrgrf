@@ -1,7 +1,12 @@
 
 const Discord = require('discord.js');
 const client = new Discord.Client();   
-
+const fs = require("fs"); 
+const canvas = require("canvas");
+const moment = require("moment");  
+const ms = require("ms");
+const jimp = require('jimp');  
+var prefix = "$"
 client.on('ready', () => {
 
         console.log(`----------------`);
